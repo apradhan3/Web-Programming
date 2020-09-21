@@ -1,0 +1,166 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Haventica, sans-serif;
+	line-height: 30px;
+	color: black;
+
+}
+header
+{
+	background-color: coral;
+	height: 80px;
+	margin-bottom: 20px;
+}
+
+header h1
+{
+	text-align: center;
+	padding: 20px;
+}
+.name h1
+{
+	text-align: center;
+}
+
+main
+{
+	width: 90%;
+	margin: 50px auto;
+	color: white;
+	display: grid;
+	grid-template-rows: repeat(7,min-content);
+	grid-template-columns: repeat(3,minmax(150px,1fr));
+	grid-gap: 20px;
+	grid-auto-rows: 150px;
+
+}
+.span11
+{
+	font-weight: bold;
+	color: red;
+}
+.div0
+{
+	grid-column: 1 / -1;
+
+}
+.div0 h1
+{
+	text-align: center;
+
+}
+.div1{
+	background-image: url(images/amber1.png);
+	background-size: cover;
+	z-index: 1;
+	
+}
+.div2{
+	text-align: justify;
+	grid-row: 2/3; 
+	grid-column: 2/4;
+
+}
+
+.div3{
+	grid-column: 1/ -1;
+}
+.div4{
+	grid-column: 1/ -1;
+}
+
+.div4 table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	
+}
+th, td
+{
+	 text-align: left;
+ 	 padding: 16px;
+}
+tr:nth-child(1) {
+  background-color: none;
+}
+tr:nth-child(2) {
+  background-color: red;
+}
+tr:nth-child(3) {
+  background-color: blue;
+}
+tr:nth-child(4) {
+  background-color: yellow;
+}
+tr:nth-child(5) {
+  background-color: purple;
+}
+table tr td a
+{
+	text-decoration: none;
+}
+
+.div5{
+	grid-column: 1/ -1;
+	padding: 20px 30px;
+	color: black;
+}
+
+.div5 ul li dl a
+{
+	text-decoration: none;
+	color: blue;
+
+}
+.div5 ul li dl a:hover
+{
+	cursor: pointer;
+	color: green;
+}
+
+.div5 p a
+{
+	text-decoration: none;
+	color: blue;
+
+}
+
+.div5 p a:hover
+{
+	cursor: pointer;
+	color: green;
+}
+.div6{
+	grid-column: 1/ -1;
+	padding: 20px 30px;
+}
+
+.div6 .nestedlist .list1 .inlist1  .lil a
+{
+	text-decoration: none;
+	color: blue;
+
+}
+
+.div7
+{
+	
+	grid-column: 1/ -1;
+	padding: 20px 20px;
+}
+
+footer
+{
+	height: 100px;
+	background-color: black;
+	
+
+}
+footer p
+{
+	text-align: center;
+	padding: 20px;
+	color: blue;
+}
