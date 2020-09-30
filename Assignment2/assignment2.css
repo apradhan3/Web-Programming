@@ -1,0 +1,677 @@
+* {margin: 0;padding: 0;box-sizing: 0;}
+body {background-image: url('images/background.png');}
+.bannerimg
+{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#title h1
+{
+    text-align: center;
+    margin-bottom: 15px;
+}
+main
+{
+
+    border: 2px solid red;
+    width: 70%;
+    height: 800px;
+    margin: auto;
+    margin-bottom: 20px;   
+}
+
+.aside-right
+{
+    width: 25%;
+    float: right;
+    /*border: 1px solid blue;*/
+    background-color: #A2B964;
+    
+}
+.img
+{
+   max-height: 100%;
+   max-width: 100%;
+}
+
+.texts
+{
+    font-family: Cinematografica;
+    font-size: 8pt;
+}
+
+.texts dl
+{
+    margin-left:5px;
+    padding-bottom: 5px;
+}
+
+.texts dt
+{
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+.texts dd
+{
+    padding: 2px 0px 0px 30px;
+    font-family: Arial 
+}
+
+/*----------------------------General Overview---------------------*/
+.leftcolumn
+{
+    
+    width: 74%;
+    float: left;
+}
+
+.clr
+{
+    clear: both;
+}
+
+.rotten
+{
+    width: 101.5%;
+    height: 83px;
+    background-image: url('images/rottenbackground.png');
+    display: flex;
+    flex-direction: row;
+}
+.textt
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 48pt;
+    color: red;
+}
+.texttt
+{
+    padding: 50px 0px 5px 0px;
+    font-weight: bold;
+    font-size: 12pt;
+    color: white;
+}
+
+
+/*--------------------------Content inside----------------*/
+
+.boxes
+{
+    display: grid;
+    grid-template-rows: 180px 125px 125px 160px;
+    grid-template-columns: repeat(2,325px);
+    grid-gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.div1{}
+.div2{}
+.div3{grid-template-rows: 80px;}
+.div4{ grid-template-rows: 80px;}
+.div5{}
+.div6{}
+.div7{}
+.div8{}
+.indiv1
+{
+    font-family: Serif;
+    font-size: 11pt;
+    font-weight: bold;
+    width: 322px;
+    height: 130px;
+    border: 2px solid gray;
+    background-color: #E1D697;
+    justify-content: stretch;   
+}
+
+.items
+{
+    padding: 5px;
+}
+.indiv11
+{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.indiv2
+{
+    font-family: Serif;
+    font-size: 11pt;
+    font-weight: bold;
+    width: 322px;
+    height: 130px;
+    border: 2px solid gray;
+    background-color: #E1D697;
+    
+}
+.indiv22
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+
+.indiv3
+{
+    font-family: Serif;
+    font-size: 11pt;
+    font-weight: bold;
+    width: 322px;
+    border: 2px solid gray;
+    background-color: #E1D697;
+}
+.indiv33
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+.indiv4
+{
+    font-family: Serif;
+    font-size: 11pt;
+    font-weight: bold;
+    width: 322px;
+    border: 2px solid gray;
+    background-color: #E1D697;
+}
+.indiv44
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+.indiv5
+{
+    font-family: Serif;
+    font-size: 11pt;
+    font-weight: bold;
+    width: 322px;
+    border: 2px solid gray;
+    background-color: #E1D697;
+    display: flex;
+    align-items: flex-start;
+}
+.indiv55
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+.indiv6
+{
+    font-family: Serif;
+    font-size: 11pt;
+    font-weight: bold;
+    width: 322px;
+    border: 2px solid gray;
+    background-color: #E1D697;
+}
+.indiv66
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+.indiv7
+{
+    font-family: Serif;
+    font-size: 11pt;
+    font-weight: bold;
+    width: 322px;
+    border: 2px solid gray;
+    background-color: #E1D697;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.indiv77
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+.indiv8
+{
+    font-family: Serif;
+    font-size: 11pt;
+    font-weight: bold;
+    width: 322px;
+    border: 2px solid gray;
+    margin-top: 30px;
+    
+    
+
+}
+.indiv88
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+
+.footer
+{
+    text-align: center;
+    background-color: #A2B964;
+}
+
+
+
+/*----------------Media Queries---------------*/
+
+@media (min-width: 1429px) and (max-width: 11600px)
+{
+    main
+    {
+       height: auto;
+
+    }
+    .img
+    {
+        width: 100%;
+    }
+    #title h1
+    {
+        color: cyan;
+    }
+}
+@media (min-width: 1111px) and (max-width: 1322px)
+{
+    main
+    {
+        height: auto;
+    }
+    .boxes
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .indiv1
+    {
+        height: 150px;
+        width: 400px;
+    }
+    .indiv2
+    {
+        height: 130px;
+        width: 400px;
+    }
+    .indiv3
+    {
+        height: 60px;
+        width: 400px;
+    }
+    .indiv4
+    {
+        height: 70px;
+        width: 400px;
+    }
+    .indiv5
+    {
+        height: 50px;
+        width: 400px;
+    }
+    .indiv6
+    {
+        height: 70px;
+        width: 400px;
+    }
+    .indiv7
+    {
+        height: 70px;
+        width: 400px;
+    }
+    .indiv8
+    {
+        height: 120px;
+        width: 400px;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1110px)
+{
+    main
+    {
+        height: auto;
+    }
+    .boxes
+    {
+        display: block;
+    }
+
+    .indiv1
+    {
+        height: 150px;
+        width: 350px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv11
+    {
+        margin-left: 60px;
+    }
+    .indiv2
+    {
+        height: 130px;
+        width: 350px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv22
+    {
+        margin-left: 60px;
+    }
+    .indiv3
+    {
+        height: 80px;
+        width: 350px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv33
+    {
+        margin-left: 60px;
+    }
+    .indiv4
+    {
+        height: 70px;
+        width: 350px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv44
+    {
+        margin-left: 60px;
+    }
+    .indiv5
+    {
+        height: 70px;
+        width: 350px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv55
+    {
+        margin-left: 60px;
+    }
+    .indiv6
+    {
+        height: 70px;
+        width: 350px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv66
+    {
+        margin-left: 60px;
+    }
+    .indiv7
+    {
+        height: 70px;
+        width: 350px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv77
+    {
+        margin-left: 60px;
+    }
+    .indiv8
+    {
+        height: 100px;
+        width: 350px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv88
+    {
+        margin-left: 60px;
+    }
+    #title h1
+    {
+        color: red;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 850px)
+{
+    main
+    {
+        width: 100%;
+        height: auto;
+    }
+    .boxes
+    {
+        display: block;
+    }
+
+    .indiv1
+    {
+        height: 100px;
+        width: 450px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv11
+    {
+        margin-left: 60px;
+    }
+    .indiv2
+    {
+        height: 100px;
+        width: 450px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv22
+    {
+        margin-left: 60px;
+    }
+    .indiv3
+    {
+        height: 70px;
+        width: 450px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv33
+    {
+        margin-left: 60px;
+    }
+    .indiv4
+    {
+        height: 60px;
+        width: 450px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv44
+    {
+        margin-left: 60px;
+    }
+    .indiv5
+    {
+        height: 50px;
+        width: 450px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv55
+    {
+        margin-left: 60px;
+    }
+    .indiv6
+    {
+        height: 70px;
+        width: 450px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv66
+    {
+        margin-left: 60px;
+    }
+    .indiv7
+    {
+        height: 70px;
+        width: 450px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .indiv77
+    {
+        margin-left: 60px;
+    }
+    .indiv8
+    {
+        height: 80px;
+        width: 450px;
+        margin-left: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .indiv88
+    {
+        margin-left: 60px;
+    }
+    #title h1
+    {
+        color: coral;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 699px)
+{
+    main
+    {
+        width: 100%;
+        height: auto;
+    }
+    .boxes
+    {
+        display: block;
+    }
+
+    .indiv1
+    {
+        height: 150px;
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .indiv11
+    {
+        margin-left: 20px;
+    }
+    .indiv2
+    {
+        height: 150px;
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .indiv22
+    {
+        margin-left: 20px;
+    }
+    .indiv3
+    {
+        height: 150px;
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .indiv33
+    {
+        margin-left: 20px;
+    }
+    .indiv4
+    {
+        height: 150px;
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .indiv44
+    {
+        margin-left: 20px;
+    }
+    .indiv5
+    {
+        height: 150px;
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .indiv55
+    {
+        margin-left: 20px;
+    }
+    .indiv6
+    {
+        height: 150px;
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .indiv66
+    {
+        margin-left: 20px;
+    }
+    .indiv7
+    {
+        height: 150px;
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .indiv77
+    {
+        margin-left: 20px;
+    }
+    .indiv8
+    {
+        height: 150px;
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .indiv88
+    {
+        margin-left: 20px;
+    }
+    #title h1
+    {
+        color: blue;
+    }
+
+    .texttt
+    {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
