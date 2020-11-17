@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+        function check()
+    
+        {   
+
+            
+
+            if(document.myform.id.value == "" || document.myform.firstname.value == "" || document.myform.lastname.value == "" ){
+                    alert("You forgot to enter ID, FIRTNAME OR LASTNAME")
+            }
+            else {
+                document.getElementById('f1').innerHTML ="User Id:" +  document.myform.id.value;
+                document.getElementById('f2').innerHTML = "First Name:" + document.myform.firstname.value;
+                document.getElementById('f3').innerHTML = "Last Name:" + document.myform.lastname.value;
+            }
+
+      
+
+
+
+        }
+    </script>
+
+    <form action="" name='myform' onsubmit="return check()">
+        <p>Enter User Id:</p>
+        <input type="text" name='id' >
+        <p>Enter your First Name:</p>
+        <input type="text" name='firstname' >
+        <p>Enter your Last Name:</p>
+        <input type="text" name='lastname' >
+        <p><input type="submit" onclick='check(); return false'></p>
+    </form>
+    <p>Submit the form and I will show your input information:</p>
+    <p id="f1"></p>
+    <p id="f2"></p>
+    <p id="f3"></p>
+    
+
+
+</body>
+</html>
