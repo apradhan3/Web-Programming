@@ -1,0 +1,121 @@
+<html>
+<head>
+<!-- title for the web page -->
+<title>Company Payroll Report</title>
+<!-- style for table -->
+<style>
+.th {
+font-weight: bold;
+}
+</style>
+<script>
+//variable for counting number of employees empCount assigned to 0
+//variable for totalPay and assigned to 0
+var empCount = 0, totalPay = 0;
+var employees, hoursWorked, empPay;
+//javascrpt array for storing wages and payPerWeek
+var wages = [];
+var payPerWeek = [];
+//for loop for number of employees
+for (var emp = 0; emp < 5; emp++) {
+//prompt is used to take input from user
+hoursWorked = parseFloat(prompt("Enter Hours worked for " + (emp + 1) + " Employee", "Employee " + (emp + 1)));
+//if user enter -1 that is no employee wages and empCount=0 then
+if (hoursWorked == -1 && empCount == 0) {
+//alert the user
+alert("Kindly enter at least one employees hours");
+//break the loop
+break;
+}
+else {
+//if user enter number of wages then
+if (hoursWorked != -1) {
+//storing hoursWorked in wages array
+wages[emp] = hoursWorked;
+//incrementing employee count
+empCount = empCount + 1;
+//checking wages
+if (wages[emp] < 40) {
+//if wages < 40 then $15 per hour
+empPay = wages[emp] * 15;
+//storing pay in payPerWeek[]
+payPerWeek[emp] = empPay;
+}
+else {
+//if wages > 40 then for more than 40 hours pay rate is one and half time
+empPay = 40 * 15 + (wages[emp] - 40) * (15 + 15 / 2);
+//storing pay in payPerWeek[]
+payPerWeek[emp] = empPay;
+}
+//storing totalPay
+totalPay = totalPay + payPerWeek[emp];
+}
+else {
+//if -1 then break;
+break;
+}
+}
+}
+
+</script>
+</head>
+<body>
+<!-- div for table -->
+<div id="myDiv"></div>
+<!-- <h2> is used to displayed total pay -->
+<h2>Total pay of all the employees :
+<span id="totalPay"></span>
+</h2>
+<script>
+//declaring row and col as javascript variables
+var row, col;
+//creating table with createElement() method
+var table = document.createElement("Table");
+//setting border for table
+table.setAttribute("border", "1px")
+//creating row with insertRow() method
+row = table.insertRow(i);
+//this is used to create cell
+col = row.insertCell(0);
+//setting innerHTML for the cell
+col.innerHTML = "Sr.No";
+//setAttribute() is used to set the class
+col.setAttribute("class", "th");
+//this is used to create cell
+col = row.insertCell(1);
+//setting innerHTML for the cell
+col.innerHTML = "Number of hours worked";
+//setAttribute() is used to set the class
+col.setAttribute("class", "th");
+//this is used to create cell
+col = row.insertCell(2);
+//setting innerHTML for the cell
+col.innerHTML = "Employee's pay for the week";
+//setAttribute() is used to set the class
+col.setAttribute("class", "th");
+//this loop is used to create number of rows in the table
+for (var i = 0; i < empCount; i++) {
+//insertRow() is used to create row
+row = table.insertRow(i + 1);
+//this is used to create cell
+col = row.insertCell(0);
+//innerHTML as value of i
+col.innerHTML = (i + 1);
+//this is used to create cell
+col = row.insertCell(1);
+//innerHTML as wages[i]
+col.innerHTML = wages[i];
+//this is used to create cell
+col = row.insertCell(2);
+//innerHTML as payPerWeek[i]
+col.innerHTML = payPerWeek[i];
+}
+//getting div element
+var div = document.getElementById("myDiv");
+//appending table to the body
+div.appendChild(table);
+//displaying total pay on the span
+document.getElementById("totalPay").innerHTML = totalPay;
+</script>
+</body>
+</html>
